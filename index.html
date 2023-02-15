@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 웹 페이지 보면서 하려면 오른쪽 클릭 후 open with live server 클릭 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023년 버킷리스트</title> <!-- 웹 창의 제목 -->
+    <!-- 웹 스타일 -->
+    <!-- padding은 여백 -->
+    <!-- border-radius: 백그라운드 박스 둥글게 만드는 거-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+        * {
+            font-family: 'Roboto Mono', monospace;
+        }
+        .title {
+            color: white;
+            background-color: tomato;
+            font-size: 24px;
+            padding: 4px 14px;
+            border-radius: 8px;
+        }
+
+        .bg {
+            width: 360px;
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+        }
+
+        .msg {
+            font-weight: bold;
+        }
+
+        .bucket {
+            width: 160px;
+            height: 160px;
+        }
+
+        .img1 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img2 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <!-- 가운대로 맞춰놓음 -->
+    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+</head>
+
+<!-- center 옵션을 주면 가운데로 정렬됨-->
+<body class="bg-t3 center">
+    <!-- 밑에 class="" 이것은 이름표는 두개를 붙일 수 있음 -->
+    <h1 class="title-t3">2023 신년계획</h1> <!-- 타이틀 -->
+    <p class="msg">올해는 꼭 모두 지키자!</p> <!-- 문단 먄들기 -->
+    <!-- shift + option + f # 자동정렬 -->
+    <div class="row flex-row wrap"> <!-- flex-row wrap 하면 2개씩 정렬?-->
+        <!-- 묶음 상자 -->
+        <div class="bucket img1-t5 center">꼬박꼬박<br> 저축하기</div> <!-- 상자 만들기 -->
+        <div class="bucket img2-t5 center">집 이사하기</div>
+        <div class="bucket img3-t5 center">파이썬<br> 공부하기</div>
+        <div class="bucket img4-t5 center">자격증<br> 취득하기</div>
+        <div class="bucket img5-t5 center">골격근량<br> 5키로 늘리기</div>
+        <div class="bucket img6-t5 center done">삼시세끼 챙겨먹기</div>
+    </div>
+</body>
+
+</html>
